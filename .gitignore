@@ -2,6 +2,7 @@
 .env
 .env.local
 .env.*.local
+steps.md
 
 # Python
 __pycache__/
