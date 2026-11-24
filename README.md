@@ -38,13 +38,13 @@ RenewStation was built by **Team NeoGen** for the **Huawei Developer Competition
 
 <div align="center">
 
-| Member | Role | GitHub |
-|---|---|---|
-| **BENSBEH CHAIMAE** | Machine learning model training | [@YOUR_GITHUB](https://github.com/chaibs00) |
-| **BJIBJI HAMZA** | ROLE | [@Bjibjihamza](https://github.com/Bjibjihamza) |
-| **SGHIOUAR IMANE** | ROLE | [@GITHUB_3](https://github.com/imanesghiouar) |
-| **EL AKRAMINE YASSIR SALIM** | ROLE | [@GITHUB_4](https://github.com/SalimYs) |
-| **ECHAHLAOUI YOUSSEF** | ROLE | [@GITHUB_5](https://github.com/Yussef31) |
+| Member |  GitHub |
+|---|---|
+| **BENSBEH CHAIMAE** | [@Github](https://github.com/chaibs00) |
+| **BJIBJI HAMZA** | [@Github](https://github.com/Bjibjihamza) |
+| **SGHIOUAR IMANE** | [@Github](https://github.com/imanesghiouar) |
+| **EL AKRAMINE YASSIR SALIM** |  [@Github](https://github.com/SalimYs) |
+| **ECHAHLAOUI YOUSSEF** |  [@Github](https://github.com/Yussef31) |
 
 </div>
 
