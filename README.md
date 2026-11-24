@@ -36,6 +36,18 @@
 
 RenewStation was built by **Team NeoGen** for the **Huawei Developer Competition – Spark Infinity**, organized by **HCDG Northern Africa** (Egypt, remote, December 2025).
 
+<div align="center">
+
+| Member | Role | GitHub |
+|---|---|---|
+| **BENSBEH CHAIMAE** | Machine learning model training | [@YOUR_GITHUB](https://github.com/chaibs00) |
+| **BJIBJI HAMZA** | ROLE | [@Bjibjihamza](https://github.com/Bjibjihamza) |
+| **SGHIOUAR IMANE** | ROLE | [@GITHUB_3](https://github.com/imanesghiouar) |
+| **EL AKRAMINE YASSIR SALIM** | ROLE | [@GITHUB_4](https://github.com/SalimYs) |
+| **ECHAHLAOUI YOUSSEF** | ROLE | [@GITHUB_5](https://github.com/Yussef31) |
+
+</div>
+
 
 <div align="center">
 <a href="https://www.youtube.com/watch?v=DmIECEjYKoY">
@@ -159,14 +171,20 @@ Every day at midnight, the platform:
 
 
 
+<div align="center">
+
 | Task | Target |
 |---|---|
 | **Consumption forecasting** | Energy consumed by each of the `17` buildings (kW) | 
 | **Production forecasting** | Energy produced by the `800 kWp` solar station (kWh) | 
 
+</div>
+
 <br>
 
 ### $\color{orange}{\textsf{Consumption Forecasting}}$
+
+<div align="center">
 
 | | |
 |---|---|
@@ -177,11 +195,15 @@ Every day at midnight, the platform:
 | **Preprocessing** | `StandardScaler` on numeric features, `OneHotEncoder` on building |
 | **Retraining** | Daily, through the `retrain_model` Airflow DAG |
 
+</div>
+
 <br>
 
 ### $\color{orange}{\textsf{Production Forecasting}}$
 
 Solar output is computed directly from the **7-day weather forecast** :
+
+<div align="center">
 
 | | |
 |---|---|
@@ -189,6 +211,8 @@ Solar output is computed directly from the **7-day weather forecast** :
 | **Panels** | `3,754 m²`, `22.5%` module efficiency, `800 kWp` peak |
 | **Losses** | Cell temperature (NOCT `45°C`, `-0.4%/°C`), inverter efficiency `97%` |
 | **Output** | Hourly production (kWh), capped at peak power |
+
+</div>
 
 
 <br>
@@ -220,11 +244,15 @@ Results of the consumption model, as presented at the competition:
 
 ## $\color{#0284C7}{\textsf{Pipelines}}$
 
+<div align="center">
+
 | DAG | Schedule | What it does |
 |---|---|---|
 | `initialization` | Manual, run once | Loads weather history, generates consumption history, sets batteries to 100% |
 | `daily_prediction` | Daily, 00:00 | Archives yesterday, updates real battery state, fetches 7-day weather, predicts consumption, solar and battery for 7 days |
 | `retrain_model` | Daily, 00:00 | Retrains the consumption model on the latest data |
+
+</div>
 
 
 <br>
@@ -241,6 +269,3 @@ All credit goes to **Team NeoGen**, who designed and built RenewStation for the 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:0EA5E9,100:16A34A&height=100&section=footer" width="100%"/>
 </div>
-
-
-
